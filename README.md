@@ -16,7 +16,7 @@ pip install -r requirements.txt
 # Run script
 python3 blobby.py -i icons/keycloak.png
 
-# View keycloak-decorated.png
+# View blob-keycloak.png
 ```
 
 ## Options
