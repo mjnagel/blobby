@@ -40,4 +40,4 @@ The icons folder stores the base blob (170x170) plus an example logo (keycloak.p
 When using a new company/product logo you should keep these considerations in mind:
 - Transparent backgrounds will offer the best results (https://www.remove.bg/ is an easy way to make this happen)
 - High quality is good, but the image will be resized to 78x78 to fit in with the blob template properly
-- If your logo is a strange shape it may not work well with the resizing (might turn out really small), you can adjust the `LOGO_SIZE` parameter
+- If your logo is a strange shape it may not work well with the resizing (might turn out really small), you can adjust the `LOGO_SIZE` value in the script
