@@ -25,7 +25,7 @@ IMGSIZE = 170  # Size of final image (square)
 SCALAR = 16 # Amount to oversize temporary images so resampling will not show jagginess.  Should be exponential to 4.
 SCRIPT_DIR = os.path.dirname(__file__)
 BLOB_FILE = f"{SCRIPT_DIR}/icons/blob.png"
-LOGO_SIZE = (72,72)
+LOGO_SIZE = (78,78)
 
 # Final image
 imgfinal = Image.new("RGBA", (IMGSIZE,IMGSIZE))
