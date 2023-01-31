@@ -1,6 +1,6 @@
-# Icon Decorator
+# Blobby (the blobifier)
 
-Simple python script to decorate an icon with maturity level and/or border
+Simple python script to make a blob from a given product/company logo (or anything else)
 
 ## Prerequisites
 
@@ -10,13 +10,11 @@ Simple python script to decorate an icon with maturity level and/or border
 ## Quick start
 
 ```shell
-cd scripts
-
 # Install required modules
 pip install -r requirements.txt
 
 # Run script
-python3 decorator.py -i icons/keycloak.png -mg -b
+python3 blobby.py -i icons/keycloak.png
 
 # View keycloak-decorated.png
 ```
@@ -24,30 +22,22 @@ python3 decorator.py -i icons/keycloak.png -mg -b
 ## Options
 
 ```shell
-usage: decorator.py [-h] [-b] -i IMAGE [-mg] [-mi] [-ms] [--show] [-o OUTPUT]
+usage: blobby.py [-h] [-b] -i IMAGE [--show] [-o OUTPUT]
 
 options:
   -h, --help            show this help message and exit
-  -b, --bigbang         Deocrate icon with Big Bang ornament
   -i IMAGE, --image IMAGE
-                        Image to decorate
-  -mg, --graduated      Decorate icon with Graudated Maturity ornament.
-  -mi, --incubating     Decorate icon with Incubating Maturity ornament.
-  -ms, --sandbox        Decorate icon with Sandbox Maturity ornament.
+                        Image to blobify
   --show                Show image instead of saving to file
   -o OUTPUT, --output OUTPUT
-                        Output image (default is ./<image>-decorated.png)
+                        Output image (default is ./<image>-blob.png)
 ```
 
 ## Icons
 
-Icons are the base images that will be decorated by the script.  They are kept in the `icons` directory to make it easier to update when changes are needed.  The icons should be in the following format:
+The icons folder stores the base blob (170x170) plus an example logo (keycloak.png).
 
-- Square (or as close as possible)
-- Larger than 100px by 100px
-- (Optional) Transparent background
-- Named after the application or company it represents, using kebab-case
-
-## Fonts
-
-All fonts used by the script are stored in the `fonts` directory.  Big Bang uses the Ubuntu Mono font.
+When using a new company/product logo you should keep these considerations in mind:
+- Transparent backgrounds will offer the best results (https://www.remove.bg/ is an easy way to make this happen)
+- High quality is good, but the image will be resized to 72x72 to fit in with the blob template properly
+- If your logo is a strange shape it may not work well with the resizing (might turn out really small), you can adjust the `LOGO_SIZE` parameter
