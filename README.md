@@ -1,6 +1,8 @@
 # Blobby (the blobifier)
 
-Simple python script to make a blob from a given product/company logo (or anything else)
+![](./icons/blob-blob-blob-blob.png)
+
+Simple python script to make a blob emoji below another image (or anything else). Designed to quickly create emojis for Slack/Mattermost with company/product logos.
 
 ## Prerequisites
 
@@ -14,9 +16,9 @@ Simple python script to make a blob from a given product/company logo (or anythi
 pip install -r requirements.txt
 
 # Run script
-python3 blobby.py -i icons/keycloak.png
+python3 blobby.py -i <myimage>.png
 
-# View blob-keycloak.png
+# View blob-<myimage>.png
 ```
 
 ## Options
@@ -36,9 +38,9 @@ options:
 
 ## Icons
 
-The icons folder stores the base blob (170x170) plus an example logo (keycloak.png).
+The icons folder stores the base blob (170x170), base old-man-yells-at, and some blob-ception images.
 
-When using a new company/product logo you should keep these considerations in mind:
+When using a new image with this script you should keep these considerations in mind:
 - Transparent backgrounds will offer the best results (https://www.remove.bg/ is an easy way to make this happen)
 - High quality is good, but the image will be resized to 78x78 to fit in with the blob template properly
 - If your logo is a strange shape it may not work well with the resizing (might turn out really small), you can adjust the `LOGO_SIZE` value in the script
