@@ -2,7 +2,7 @@
 
 ![](./icons/blob-blob-blob-blob.png)
 
-Simple python script to make a blob emoji combined with another image (or anything else). Designed to quickly create emojis for Slack/Mattermost with company/product logos.
+Simple python script to make a blob emoji combined with another image. Designed to quickly create emojis for Slack/Mattermost with company/product logos.
 
 ## Prerequisites
 
