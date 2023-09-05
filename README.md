@@ -22,15 +22,16 @@ python3 blobby.py -i icons/keycloak.png
 ## Options
 
 ```shell
-usage: blobby.py [-h] [-b] -i IMAGE [--show] [-o OUTPUT]
+usage: blobby.py [-h] -i IMAGE [--show] [--yell] [-o OUTPUT]
 
 options:
   -h, --help            show this help message and exit
   -i IMAGE, --image IMAGE
-                        Image to blobify
+                        Image to decorate
   --show                Show image instead of saving to file
+  --yell                Make old man yelling at X emoji instead of blob
   -o OUTPUT, --output OUTPUT
-                        Output image (default is ./<image>-blob.png)
+                        Output image (default is ./blob-<image>.png or ./old-man-yells-at-<image>.png)
 ```
 
 ## Icons
